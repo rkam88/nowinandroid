@@ -24,3 +24,9 @@ plugins {
 android {
     namespace = "com.google.samples.apps.nowinandroid.screenshottest"
 }
+
+dependencies {
+    testImplementation(libs.testparameterinjector)
+    testImplementation(libs.reflections)
+    testImplementation(libs.kotlin.reflect)
+}
