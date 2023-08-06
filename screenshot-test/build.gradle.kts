@@ -29,4 +29,13 @@ dependencies {
     testImplementation(libs.testparameterinjector)
     testImplementation(libs.reflections)
     testImplementation(libs.kotlin.reflect)
+
+    implementation(project(":feature:interests"))
+    implementation(project(":feature:foryou"))
+    implementation(project(":feature:bookmarks"))
+    implementation(project(":feature:topic"))
+    implementation(project(":feature:search"))
+    implementation(project(":feature:settings"))
+    implementation(project(":core:ui"))
+    implementation(project(":core:designsystem"))
 }
