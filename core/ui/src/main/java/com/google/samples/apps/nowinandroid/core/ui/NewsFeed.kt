@@ -42,6 +42,8 @@ import androidx.compose.ui.unit.dp
 import com.google.samples.apps.nowinandroid.core.analytics.LocalAnalyticsHelper
 import com.google.samples.apps.nowinandroid.core.designsystem.theme.NiaTheme
 import com.google.samples.apps.nowinandroid.core.model.data.UserNewsResource
+import com.google.samples.apps.nowinandroid.core.ui.screenshottest.ScreenshotTestParameters
+import com.google.samples.apps.nowinandroid.core.ui.screenshottest.TestRenderingMode
 
 /**
  * An extension on [LazyListScope] defining a feed with news resources.
@@ -125,6 +127,7 @@ sealed interface NewsFeedUiState {
     ) : NewsFeedUiState
 }
 
+@ScreenshotTestParameters(renderingMode = TestRenderingMode.NORMAL)
 @Preview
 @Composable
 private fun NewsFeedLoadingPreview() {
