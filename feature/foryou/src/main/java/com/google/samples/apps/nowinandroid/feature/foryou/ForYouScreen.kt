@@ -104,6 +104,7 @@ import com.google.samples.apps.nowinandroid.core.ui.TrackScrollJank
 import com.google.samples.apps.nowinandroid.core.ui.UserNewsResourcePreviewParameterProvider
 import com.google.samples.apps.nowinandroid.core.ui.launchCustomChromeTab
 import com.google.samples.apps.nowinandroid.core.ui.newsFeed
+import com.google.samples.apps.nowinandroid.core.ui.screenshottest.IgnoreScreenshotTest
 
 @Composable
 internal fun ForYouRoute(
@@ -500,6 +501,7 @@ private fun feedItemsSize(
     return feedSize + onboardingSize
 }
 
+@IgnoreScreenshotTest("IllegalStateException: Permissions should be called in the context of an Activity")
 @DevicePreviews
 @Composable
 fun ForYouScreenPopulatedFeed(
@@ -526,6 +528,7 @@ fun ForYouScreenPopulatedFeed(
     }
 }
 
+@IgnoreScreenshotTest("IllegalStateException: Permissions should be called in the context of an Activity")
 @DevicePreviews
 @Composable
 fun ForYouScreenOfflinePopulatedFeed(
@@ -552,6 +555,7 @@ fun ForYouScreenOfflinePopulatedFeed(
     }
 }
 
+@IgnoreScreenshotTest("IllegalStateException: Permissions should be called in the context of an Activity")
 @DevicePreviews
 @Composable
 fun ForYouScreenTopicSelection(
@@ -581,6 +585,7 @@ fun ForYouScreenTopicSelection(
     }
 }
 
+@IgnoreScreenshotTest("IllegalStateException: Permissions should be called in the context of an Activity")
 @DevicePreviews
 @Composable
 fun ForYouScreenLoading() {
@@ -602,6 +607,7 @@ fun ForYouScreenLoading() {
     }
 }
 
+@IgnoreScreenshotTest("IllegalStateException: Permissions should be called in the context of an Activity")
 @DevicePreviews
 @Composable
 fun ForYouScreenPopulatedAndLoading(
