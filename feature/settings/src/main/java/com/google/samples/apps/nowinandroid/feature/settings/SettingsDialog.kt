@@ -65,6 +65,7 @@ import com.google.samples.apps.nowinandroid.core.model.data.ThemeBrand
 import com.google.samples.apps.nowinandroid.core.model.data.ThemeBrand.ANDROID
 import com.google.samples.apps.nowinandroid.core.model.data.ThemeBrand.DEFAULT
 import com.google.samples.apps.nowinandroid.core.ui.TrackScreenViewEvent
+import com.google.samples.apps.nowinandroid.core.ui.screenshottest.IgnoreScreenshotTest
 import com.google.samples.apps.nowinandroid.feature.settings.R.string
 import com.google.samples.apps.nowinandroid.feature.settings.SettingsUiState.Loading
 import com.google.samples.apps.nowinandroid.feature.settings.SettingsUiState.Success
@@ -282,6 +283,7 @@ private fun LinksPanel() {
     }
 }
 
+@IgnoreScreenshotTest
 @Preview
 @Composable
 private fun PreviewSettingsDialog() {
@@ -302,6 +304,7 @@ private fun PreviewSettingsDialog() {
     }
 }
 
+@IgnoreScreenshotTest
 @Preview
 @Composable
 private fun PreviewSettingsDialogLoading() {
